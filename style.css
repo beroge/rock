@@ -2,6 +2,7 @@ h1 {
     font-family: 'Hanalei Fill', cursive;
     font-size:5em;
     margin:0em auto;
+    color:rgba(0, 0, 0, 0.5)
 }
 header {
     display:flex;    
