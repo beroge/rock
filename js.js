@@ -63,15 +63,31 @@ function battle() {
 let playerScore = 0;
 let compScore = 0;
 
-// Increment battle counter up to five
-for (let round = 1; round <= 5; round ++) {
-  console.log(`\n--- Round ${round} ---`);
+// // Increment battle counter up to five
+// for (let round = 1; round <= 5; round ++) {
+//   console.log(`\n--- Round ${round} ---`);
+//   battle();
+// }
+
+// console.log('\n--- Battle Results ---');
+// console.log(`Player: ${playerScore}`);
+// console.log(`Computer: ${compScore}`);
+
+while (playerScore < 5 && compScore < 5) {
+  console.log(`\n--- Current Score: Player ${playerScore} - Computer ${compScore}`);
   battle();
+
+  if (playerScore === 5) {
+    console.log('Awesome! You kicked the computers Ass!');
+  } else if (compScore === 5) {
+    console.log('You were PWNED by a computer!')
+  }
 }
 
-console.log('\n--- Battle Results ---');
+console.log('\n--- Final Battle Results ---');
 console.log(`Player: ${playerScore}`);
 console.log(`Computer: ${compScore}`);
+
 
 if (playerScore > compScore) {
   console.log('Congrats!  You are the winner!')
